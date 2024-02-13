@@ -1,0 +1,17 @@
+{
+    "hostRequirements": {
+        "cpus": 16,
+        "memory": "8gb",
+        "storage": "32gb"
+    },
+    "build": { "dockerfile": "Dockerfile" },
+    "onCreateCommand" : "bash ./.devcontainer/on_create.sh",
+    "runArgs": ["--privileged", "-v", "/var/run/docker.sock:/var/run/docker.sock", "--security-opt", "seccomp=unconfined"],
+	"extensions": [
+		"ms-vscode.cpptools",
+		"streetsidesoftware.code-spell-checker",
+		"eamodio.gitlens",
+		"ms-python.vscode-pylance",
+		"ms-python.python"
+	]
+}
