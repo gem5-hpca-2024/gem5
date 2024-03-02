@@ -1,5 +1,5 @@
 #!/bin/bash
 
-# Nothing to do for now.
+mv /tmp/gem5/build /workspace/gem5
 
 exit 0
