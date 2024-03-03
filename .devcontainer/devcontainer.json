@@ -4,7 +4,7 @@
         "memory": "16gb",
         "storage": "32gb"
     },
-    "build": { "dockerfile": "Dockerfile" },
+    "image": "ghcr.io/gem5/gem5-tutorial-hpca-2024-env:latest",
     "onCreateCommand" : "bash ./.devcontainer/on_create.sh",
     "runArgs": ["--privileged", "-v", "/var/run/docker.sock:/var/run/docker.sock", "--security-opt", "seccomp=unconfined"],
     "customizations": {
