@@ -12,9 +12,7 @@ from gem5.simulate.simulator import Simulator
 # We can add a different cache hierarachy.
 cache_hierarchy = PrivateL1CacheHierarchy(l1d_size="16kB", l1i_size="16kB")
 
-
-# We can increase the memory size (Note: You can only increase, not decrease)
-memory = SingleChannelDDR3_1600(size="3GB")
+memory = SingleChannelDDR3_1600(size="200MB")
 
 # Here we do a more detailed CPU core, O3.
 processor = SimpleProcessor(cpu_type=CPUTypes.O3, isa=ISA.X86, num_cores=1)
